@@ -1,0 +1,51 @@
+Acme-Claude-Shell
+
+An AI-powered interactive shell built on Claude::Agent. Describe a task in
+plain English; Claude turns it into shell commands, shows each one for
+approval, runs it through an in-process MCP tool and prints the output.
+The interactive shell keeps context between commands; the -c option runs
+one command and exits.
+
+REQUIREMENTS
+
+    - Perl 5.020 or higher
+    - Claude::Agent 0.14 or higher, and the Claude Code CLI it drives
+    - Object::Proto, IO::Async, Future::AsyncAwait
+    - Term::ReadLine, Term::ANSIColor, Term::Choose, Term::ReadKey, Term::ProgressSpinner
+
+INSTALLATION
+
+To install this module, run the following commands:
+
+	perl Makefile.PL
+	make
+	make test
+	make install
+
+SUPPORT AND DOCUMENTATION
+
+After installing, you can find documentation for this module with the
+perldoc command.
+
+    perldoc Acme::Claude::Shell
+
+You can also look for information at:
+
+    RT, CPAN's request tracker (report bugs here)
+        https://rt.cpan.org/NoAuth/Bugs.html?Dist=Acme-Claude-Shell
+
+    CPAN Ratings
+        https://cpanratings.perl.org/d/Acme-Claude-Shell
+
+    Search CPAN
+        https://metacpan.org/release/Acme-Claude-Shell
+
+
+LICENSE AND COPYRIGHT
+
+This software is Copyright (c) 2026 by LNATION.
+
+This is free software, licensed under:
+
+  The Artistic License 2.0 (GPL Compatible)
+
